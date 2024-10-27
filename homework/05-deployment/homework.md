@@ -123,8 +123,8 @@ What's the probability that this client will get a subscription?
 * 0.735
 * 0.935
 
-### Answer
-The probability that this client will get a subscription is 0.335.
+### Answer 4
+The probability that this client will get a subscription is `0.335`.
 
 ## Docker
 
@@ -163,6 +163,28 @@ So what's the size of this base image?
 
 You can get this information when running `docker images` - it'll be in the "SIZE" column.
 
+### Answer 5
+
+Well, none of the answers match. I downloaded the image. It has been updated 8 days ago. Its size is 197MB.
+
+```
+REPOSITORY              TAG           IMAGE ID       CREATED      SIZE
+svizor/zoomcamp-model   3.11.5-slim   15d61790363f   8 days ago   197MB
+```
+
+Perhaps I made a mistake. I downloaded it like this:
+
+```
+docker pull svizor/zoomcamp-model:3.11.5-slim
+```
+Or perhaps the image is newer than the questions, and they forgot to adapt it.
+
+Whatever may be the reason for this mismatch, I will have to choose one of the
+answers. I didn't see any alternative images to download, so I will stick with
+this one now.
+
+While the actual size of the image I downloaded is `197MB`, the closest answer
+is `245MB`.
 
 ## Dockerfile
 
@@ -203,6 +225,10 @@ What's the probability that this client will get a subscription now?
 * 0.757
 * 0.960
 
+### Answer 6
+
+I rounded the response to three digits, and it resulted in
+`0.759`. So, the correct answer here is `0.757`.
 
 ## Submit the results
 
