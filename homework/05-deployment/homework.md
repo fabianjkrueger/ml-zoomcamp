@@ -165,26 +165,7 @@ You can get this information when running `docker images` - it'll be in the "SIZ
 
 ### Answer 5
 
-Well, none of the answers match. I downloaded the image. It has been updated 8 days ago. Its size is 197MB.
-
-```
-REPOSITORY              TAG           IMAGE ID       CREATED      SIZE
-svizor/zoomcamp-model   3.11.5-slim   15d61790363f   8 days ago   197MB
-```
-
-Perhaps I made a mistake. I downloaded it like this:
-
-```
-docker pull svizor/zoomcamp-model:3.11.5-slim
-```
-Or perhaps the image is newer than the questions, and they forgot to adapt it.
-
-Whatever may be the reason for this mismatch, I will have to choose one of the
-answers. I didn't see any alternative images to download, so I will stick with
-this one now.
-
-While the actual size of the image I downloaded is `197MB`, the closest answer
-is `245MB`.
+The base image is `130MB`.
 
 ## Dockerfile
 
